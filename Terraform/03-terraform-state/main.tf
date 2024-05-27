@@ -1,11 +1,11 @@
 terraform {
     backend "s3" {
-        bucket         = "terraform-up-and-running-state-aki"
+        # bucket         = "terraform-up-and-running-state-aki"
         #key            = "global/s3/terraform.tfstate"
         key            = "workspace-example/terraform.tfstate"
-        region         = "us-east-2"
-        dynamodb_table = "terraform-up-and-runnig-locks"
-        encrypt        = true
+        # region         = "us-east-2"
+        # dynamodb_table = "terraform-up-and-runnig-locks"
+        # encrypt        = true
     }
     
 }
